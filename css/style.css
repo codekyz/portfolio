@@ -3,6 +3,17 @@
     outline: none;
 }
 
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Pretendard-Regular';
+}
+
 /* header */
 
 header {
@@ -27,6 +38,7 @@ header img {
     margin-left: auto;
 }
 
+
 @media screen and (max-width: 500px) {
     header h1 {
         display: none;
@@ -44,9 +56,14 @@ nav {
 nav ul {
     min-width: 200px;
     min-height: 100vh;
-    background-color: #000;
+    background-color: #333;
     color: #fff;
     padding: 5rem 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
 }
 
 nav ul li {
@@ -56,7 +73,7 @@ nav ul li {
 }
 
 nav ul li:hover {
-    background-color: #333;
+    background-color: #555;
     cursor: pointer;
 }
 
@@ -83,22 +100,66 @@ nav ul li h3 {
 main {
     display: flex;
     flex-direction: column;
-    margin: 5rem 0 0 14rem;
+    margin: 5rem 2rem 0 14rem;
     padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+main h1 {
+    padding: 0 0.5rem;
+    font-size: 1.5rem;
+    border-left: solid 3px #000;
 }
 
 
 .profile {
     display: flex;
-    justify-content: center;
     align-items: center;
+}
+
+.profile ul {
+    margin-left: 1rem;
 }
 
 .profile ul li {
     display: flex;
 }
 
+.profile ul li h6 {
+    padding: 0.3rem;
+    font-weight: 800;
+}
+
 .experience {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+}
+
+.experience_info {
+    padding: 0.5rem;
+}
+
+.experience_info h6{
+    font-size: 1.5rem;
+    background-color: #ebebeb;
+    padding: 0.5rem;
+    border-bottom: solid 3px #6b4f8a;
+}
+
+.experience_info p{
+    padding: 0.5rem;
+    line-height: 1.3rem;
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        margin: 5rem 2rem 0 6rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        margin: 5rem 2rem 0 2rem;
+    }
 }
