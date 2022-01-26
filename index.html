@@ -20,20 +20,25 @@
 
     <nav>
         <ul>
-            <li>
-                <i class="fas fa-hand-sparkles"></i>
-                <h3>Hi there</h3>
-            </li>
-            <li>
-                <i class="fas fa-folder-open"></i>
-                <h3>Project</h3>
-            </li>
-            <a href="https://github.com/codekyz" target="_blank"><li>
-                <i class="fab fa-github"></i>
-                <h3>Github</h3>
-            </li></a>
+            <a href="#">
+                <li>
+                    <i class="fas fa-hand-point-right"></i>
+                    <h3>Resume</h3>
+                </li>
+            </a>
+            <a href="#project">
+                <li>
+                    <i class="fas fa-hand-point-right"></i>
+                    <h3>Project</h3>
+                </li>
+            </a>
+            <a href="https://github.com/codekyz" target="_blank">
+                <li>
+                    <i class="fab fa-github"></i>
+                    <h3>Github</h3>
+                </li>
+            </a>
         </ul>
-        
     </nav>
 
     <main>
@@ -46,7 +51,7 @@
                         <h6>김윤정</h6>
                     </li>
                     <li>
-                        <h6>95.07.18</h6>
+                        <h6>1995.07.18</h6>
                     </li>
                     <li>
                         <h6>codekyz0111@gmail.com</h6>
@@ -68,11 +73,11 @@
                 </div>
                 <div class="experience_info">
                     <h6>수상</h6>
-                    <p>방과 후 협업 학습 프로그램 발표 장려상 | 평택대학교</p>
-                    <p>방과 후 협업 학습 수행 프로그램 우수상 | 평택대학교</p>
-                    <p>융합소프트웨어학과 학년별 경진대회 금상 | 평택대학교 융합소프트웨어학과</p>
-                    <p>경진대회(CT Competitive Exhibition) 최우수상 | 평택대학교 CT교육센터</p>
-                    <p>컴퓨터학과 소프트웨어 공모전 장려상 | 평택대학교 컴퓨터학과</p>
+                    <p>방과 후 협업 학습 프로그램 발표 장려상 | 평택대학교<br>
+                    방과 후 협업 학습 수행 프로그램 우수상 | 평택대학교<br>
+                    융합소프트웨어학과 학년별 경진대회 금상 | 평택대학교 융합소프트웨어학과<br>
+                    경진대회(CT Competitive Exhibition) 최우수상 | 평택대학교 CT교육센터<br>
+                    컴퓨터학과 소프트웨어 공모전 장려상 | 평택대학교 컴퓨터학과</p>
                 </div>
                 <div class="experience_info">
                     <h6>제 강점을 소개합니다.</h6>
@@ -120,7 +125,9 @@
                         저는 오랫동안 개발자로서 활동하기 위해 신기술에 열정적으로 관심을 두고 공부해 나갈 것입니다. 
                         구버전으로 남지 않고 늘 최신버전을 유지하기 위해 노력하는 개발자가 될 것입니다. 
                         또한 저는 제 강점 중 하나인 ‘지식 나눔’을 통해 언젠가 후배들에게 양질의 교육 자료를 제공하기 위한 지식 공유자가 되고 싶습니다. 
-                        개발 공부를 하면서 저 또한 선배 개발자분들의 양질 강의와 자료들의 도움을 너무나도 많이 받았기 때문에 뒤따라올 후배들에게 조금이라도 도움이 될 만한 개발자가 되고 싶습니다.
+                        개발 공부를 하면서 선배 개발자분들의 양질 강의와 자료들의 도움을 너무나도 많이 받았습니다. 
+                        특히 인프런이라는 플랫폼과 유튜브의 동영상 강의들이 큰 도움이 되었습니다. 
+                        저 또한 뒤따라올 후배들에게 조금이라도 도움이 될 만한 개발자가 되고 싶습니다.
                     </p>
                 </div>
                 <div class="experience_info">
@@ -136,7 +143,7 @@
                         학부 과제로는 C언어를 이용한 간단한 게임과 학생 관리 시스템 구현 경험이 있으며 PHP와 MySQL을 이용하여 웹 시스템을 구현해본 경험이 있습니다. 
                         데이터베이스 과목을 수강하여 필요한 쿼리문 작성이 가능합니다. 또한 아두이노와 라즈베리파이를 이용한 프로젝트를 진행해본 경험이 있으며 
                         간단한 머신러닝과 SNA 분석 툴인 Netminer, R, ucinet도 다뤄보았습니다. 
-                        졸업 후에는 웹 개발로 진로를 정하면서 주로 JavaScript와 Vue.js 위주로 개인 프로젝트를 진행하였습니다.
+                        졸업 후에는 웹 개발로 진로를 정하면서 주로 JavaScript와 Vue.js, React 위주로 개인 프로젝트를 진행하였습니다.
                     </p>
                 </div>
                         
@@ -144,8 +151,31 @@
             </section>
         </article>
 
-        <article>
-            Project
+        <article id="project">
+            <h1>Project를 소개합니다.</h1>
+            <section class="project_item">
+                <img src="img/time_to_go_home.png">
+                <div class="description">
+                    <h3>퇴근타이머</h3>
+                    <p>
+                        - 퇴근 시각을 입력하고 버튼을 누르면 현재 시각으로부터 남은 시간을 알려줍니다. (24시간 기준)<br>
+                    </p>
+                    <p>
+                        1인 프로젝트<br>
+                        #HTML5 #CSS3 #JavaScript #Github Pages
+                    </p>
+                    <p class="link">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/codekyz/time-to-go-home" target="_blank">https://github.com/codekyz/time-to-go-home</a><br>
+                        <i class="fas fa-link"></i>
+                        <a href="https://codekyz.github.io/time-to-go-home/" target="_blank">https://codekyz.github.io/time-to-go-home</a>
+                    </p>
+                </div>
+            </section>
+            <section class="project_item">
+                <img src="img/time_to_go_home.png">
+                <h3>퇴근타이머</h3>
+            </section>
         </article>
     </main>
     

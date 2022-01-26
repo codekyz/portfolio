@@ -78,7 +78,7 @@ nav ul li:hover {
 }
 
 nav ul li h3 {
-    margin-left: 0.5rem;
+    margin-left: 1rem;
 }
 
 @media screen and (max-width: 800px) {
@@ -140,22 +140,81 @@ main h1 {
     padding: 0.5rem;
 }
 
-.experience_info h6{
+.experience_info h6 {
     font-size: 1.5rem;
     background-color: #ebebeb;
     padding: 0.5rem;
     border-bottom: solid 3px #6b4f8a;
 }
 
-.experience_info p{
+.experience_info p {
     padding: 0.5rem;
     line-height: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+
+/* project */
+
+.project_item {
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0.5rem;
+}
+
+.project_item img {
+    width: 60%;
+    max-width: 500px;
+    margin-right: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.project_item img:hover {
+    opacity: 80%;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    padding: 0.3rem;
+}
+
+.description h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.description p {
+    padding: 0.3rem;
+    line-height: 1.5rem;
+}
+
+.link {
+    margin-top: auto;
+}
+
+.link a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1rem;
 }
 
 @media screen and (max-width: 800px) {
     main {
         margin: 5rem 2rem 0 6rem;
     }
+    .project_item {
+        display: flex;
+        flex-direction: column;
+    }
+    .project_item img {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
